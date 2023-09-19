@@ -30,6 +30,7 @@ const router = createBrowserRouter ([
         element: <Contact/>
       },
       {
+        loader: () => fetch('https://api.github.com/users/codewithiftekhar') ,
         path: "/github",
         element: <Github/>
       }
